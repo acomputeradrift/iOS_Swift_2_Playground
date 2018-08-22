@@ -7,26 +7,29 @@
  - Experiment:
  Declare a optional Double value and set it to nil.
  */
-
+var doubleValue:Double? = nil
 
 /*:
  - Experiment:
  Assign a value your optional Double.
  */
-
+doubleValue = nil
 
 /*:
  - Experiment:
  Force unwrap the optional value. Why do you have to be careful about force unwrapping?
  */
-
+//doubleValue! = 34.4
 
 /*:
  - Experiment:
  Use conditional unwrapping to verify if the optional has a value. Print the value if there is something, otherwise, print out to indicate there is no value present. Why is conditional unwrapping better than force unwrapping?
  */
-
-
+if let trueValue = doubleValue{
+    print (")\(trueValue)")
+}else{
+print ("No value")
+}
 /*:
  - Callout(Challenge):
  Create a function that removes the `nil` values from the array and returns a new array with only the valid Strings.
