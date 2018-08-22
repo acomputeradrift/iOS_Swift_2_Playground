@@ -35,6 +35,19 @@ print ("No value")
  Create a function that removes the `nil` values from the array and returns a new array with only the valid Strings.
  */
 var testData: [String?] = ["Heather", nil, "Mike", "John", nil, nil, "Bob"]
+var newArray = [String]()
+for i in 0..<testData.count {
+    if let stupid = testData[i] {
+       newArray.append(stupid)
+    }
+}
+
+for item in testData {
+    if let item = item {
+        newArray.append(item)
+    }
+}
+
 
 
 /*:
